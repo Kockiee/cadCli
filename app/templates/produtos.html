@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style type="text/css">
+        #cadastrar{
+        background-color: rgb(200, 209, 255);
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        }
+        
+        #cadastrar:hover{
+        opacity: 1;
+        }
+
+        #limpar{
+        background-color: rgb(200, 209, 255);
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        }
+
+        #limpar:hover{
+        opacity: 1;
+        }
+
+        body{
+            background-color: rgb(80, 93, 136);
+        }
+        .Descricao{
+            font-style: italic;
+            font-weight: bold;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(200, 209, 255);
+        }
+
+        .Consultar{
+            font-style: italic;
+            font-weight: bold;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(200, 209, 255);
+        }
+
+        #consultar{
+        background-color: rgb(200, 209, 255);
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        }
+        
+        #consultar:hover{
+        opacity: 1;
+        }
+
+        #limpar2{
+        background-color: rgb(200, 209, 255);
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        }
+
+        #limpar2:hover{
+        opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th colspan="5">Cadastro de Produtos</th>
+        </thead>
+        <tr class="Descricao">
+            <td>Descrição Do Produto</td>
+            <td>Quantidade Em Estoque</td>
+            <td>Valor Unitário</td>
+            <td>Dia De Entrada Em Estoque</td>
+            <td>Marca</td>
+        </tr>
+        <tr>
+            <td><Input type="text" size="50" maxlength="150" id="descPrd"/></td>
+            <td><input type="number" size="15" maxlength="4" id="qtdPrd"/></td>
+            <td><input type="number" size="15" maxlength="4" id="vlrPrd"/></td>
+            <td><input type="datetime-local" size="30" id="dtPrd"></td>
+            <td><input type="text" size="30" maxlength="100" id="mrcPrd"></td>
+        </tr>
+        <tr>
+            <td><button id="cadastrar">Cadastrar</button><button id="limpar">Limpar</button></td>
+        </tr>
+    </table>
+    <table>
+        <thead>
+            <th colspan="6">Consultar</th>
+        </thead>
+        <tr class="Consultar">
+            <td>Id Do Produto</td>
+            <td>Descrição Do Produto</td>
+            <td>Quantidade Em Estoque</td>
+            <td>Valor Unitário</td>
+            <td>Dia De Entrada Em Estoque</td>
+            <td>Marca</td>
+        </tr>
+        <tr>
+            <td><input type="number" size="5" maxlength="4" id="idPrd2"/></td>
+            <td><Input type="text" size="50" maxlength="150" id="descPrd2"/></td>
+            <td><input type="number" size="15" maxlength="4" id="qtdPrd2"/></td>
+            <td><input type="number" size="15" maxlength="4" id="vlrPrd2"/></td>
+            <td><input type="datetime-local" size="30" id="dtPrd2"></td>
+            <td><input type="text" size="30" maxlength="100" id="mrcPrd2"></td>
+        </tr>
+        <tr>
+            <td><button id="consultar">Consultar</button><button id="limpar2">Limpar</button></td>
+        </tr>
+    </table>
+</body>
+</html>

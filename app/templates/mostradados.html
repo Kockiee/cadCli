@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Dados</title>
+    <script type="text/javascript">
+        function LerDados(){
+            let Nome = localStorage.getItem("NOME");
+            let Idade = localStorage.getItem("IDADE");
+            if (Nome == null && Idade == null){
+                document.body.innerHTML = "<h1>Informações de login não localizadas :(</h1>";
+            }
+            else{
+                document.body.innerHTML = "<h1>Teste Realizado Com Sucesso</h1><br><h3>" + Nome + "</h3><br><h3>" + Idade + "</h3><button onclick='ApagarDados();'>ApagarDados</button>";
+            }
+        }
+        function ApagarDados(){
+            localStorage.clear();
+            window.location.assign("exemplo.html");
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        LerDados();
+    </script>
+</body>
+</html>
