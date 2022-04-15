@@ -1,6 +1,5 @@
 from datetime import datetime
-from itertools import product
-import string
+# from itertools import product
 from typing import List
 import databases
 import sqlalchemy
