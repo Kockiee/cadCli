@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style type="text/css">
+        select{
+        width: 270px;
+        height: 50px;
+        font-size: 20px;
+        background: #f2f2f3;
+        padding-left: 2px
+        }
+
+        input[type='checkbox']::before {
+          content: ' ';
+          width: inherit;
+          height: inherit;
+          position: absolute;
+          background-color: #fff;
+          border: 1px solid #bf360c;
+        }
+
+        input[type='checkbox']:checked::after {
+          content: ' ';
+          width: 0.2rem;
+          height: 0.5rem;
+          margin-left: 0.3rem;
+          border-color: #bf360c;
+          border-style: solid;
+          border-width: 0 3px 3px 0;
+          position: absolute;
+          transform: rotate(45deg);
+        }
+
+        button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: #008CBA;
+        }
+    </style>
+</head>
+<body>
+    <h2>Profile</h2>
+    <input type="checkbox"><label>   Acessar tela de cadastro</label>
+    <input type="checkbox"><label>   Acessar tela de cadastro e consulta de produtos</label>
+    <br>
+    <br>
+    <select name="select">
+        <option value="Default" selected>Selecione um colaborador</option>
+        <option value="1">funcionário 1</option>
+        <option value="2">funcionário 2</option>
+        <option value="3">funcionário 3</option>
+      </select>
+    <button>Confirmar</button>
+</body>
+</html>
